@@ -1,4 +1,4 @@
-from dotenv import load_dotenv
+
 import streamlit as st
 import os
 import google.generativeai as genai
@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # Load environment variables
-load_dotenv()
+
 
 # Configure GenAI
 genai.configure(api_key=os.getenv("API_KEY"))
